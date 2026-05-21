@@ -63,7 +63,6 @@ body{
 
 .hero{
   padding: 56px 0 28px;
-  text-align: center;
 }
 
 .tag{
@@ -559,7 +558,7 @@ footer {
       z-index: 1;
     }
 
-    .hero-texto { position: relative; z-index: 2; max-width: 700px; }
+    .hero-texto { position: relative; z-index: 2; max-width: 700px; text-align: left; }
     .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 20px; }
     .hero .sub-headline {
       color: var(--text-gray);
@@ -801,41 +800,42 @@ footer {
       animation: pulse 2s infinite;
     }
     .hero {
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
+   position: relative;
+   min-height: 90vh;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+ }
 
 .hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120%;
-  height: 120%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  filter: brightness(0.45);
-}
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 120%;
+   height: 120%;
+   object-fit: cover;
+   transform: translate(-50%, -50%);
+   z-index: 0;
+   filter: brightness(0.45);
+ }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-      to right,
-      rgba(5,5,5,0.5),
-      rgba(5,5,5,0.05)
-  );
-  z-index: 1;
-}
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(
+       to right,
+       rgba(5,5,5,0.5),
+       rgba(5,5,5,0.05)
+   );
+   z-index: 1;
+ }
 
 .hero-texto {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
+   position: relative;
+   z-index: 2;
+   max-width: 700px;
+   text-align: left;
+ }
     .whatsapp-float img { width: 35px; height: 35px; }
 
     @keyframes pulse {
